@@ -91,6 +91,121 @@ h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', sans-serif; }
   transform: translateY(-2px);
 }
 
+/* --- Marquee (Kayan Yazı) --- */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0, 243, 255, 0.05);
+  padding: 20px 0;
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  position: relative;
+  z-index: 10;
+}
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 25s linear infinite;
+  align-items: center;
+}
+.marquee-content span {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.marquee-content i {
+  color: var(--neon-cyan);
+  font-size: 1.2rem;
+}
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* --- Premium FAQ Styles --- */
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background: rgba(20, 22, 30, 0.4);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: rgba(0, 243, 255, 0.5);
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+    background: rgba(20, 22, 30, 0.8);
+}
+
+.faq-item.active {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+.faq-question i {
+    transition: transform 0.4s ease;
+    color: var(--text-secondary);
+}
+
+.faq-item.active .faq-question {
+    color: var(--neon-cyan);
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+    color: var(--neon-cyan);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.faq-answer p {
+    padding: 0 25px 25px 25px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.faq-answer p a {
+    color: var(--neon-cyan);
+    text-decoration: none;
+    font-weight: 500;
+    transition: text-shadow 0.3s;
+}
+
+.faq-answer p a:hover {
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.6);
+}
+
 /* Animations */
 .scroll-reveal {
   opacity: 0;
@@ -437,7 +552,7 @@ h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', sans-serif; }
 .footer-logo {
   font-family: 'Syncopate', sans-serif; font-size: 1.2rem;
   background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple), var(--neon-red));
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% auto; animation: shine 3s linear infinite;
+  background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% auto; animation: shine 3s linear infinite;
 }
 @keyframes shine { to { background-position: 200% center; } }
 .social-links { display: flex; gap: 25px; }
