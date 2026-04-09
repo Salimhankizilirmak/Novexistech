@@ -38,8 +38,8 @@ initParticles();
 // --- 2. Typed.js Initialization ---
 new Typed('#typed-text', {
   strings: [
-    'GameLover: Sıcak ve Samimi Oyuncu Topluluğu.', 
     'LeadNova: İşinizi Dijitale Taşıyan Yazılımlar.', 
+    'GameLover: Sıcak ve Samimi Oyuncu Topluluğu.', 
     'BARON AI: Algoritmik Tahmin Gücü.'
   ],
   typeSpeed: 50,
