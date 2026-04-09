@@ -39,7 +39,7 @@ initParticles();
 new Typed('#typed-text', {
   strings: [
     'GameLover: Sıcak ve Samimi Oyuncu Topluluğu.', 
-    'Novexistech: İşinizi Dijitale Taşıyan Yazılımlar.', 
+    'LeadNova: İşinizi Dijitale Taşıyan Yazılımlar.', 
     'BARON AI: Algoritmik Tahmin Gücü.'
   ],
   typeSpeed: 50,
@@ -90,7 +90,7 @@ document.querySelectorAll('.scroll-reveal').forEach(el => {
 // --- 6. BARON AI: CANLI API ENTEGRASYONU --
 // ==========================================
 
-const API_URL = 'https://betbotai.onrender.com/api/stats';
+const API_URL = '/api/stats';
 const triggerBtn = document.getElementById('trigger-analysis-btn');
 const discordMessages = document.getElementById('discord-messages');
 
