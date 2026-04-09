@@ -3,197 +3,230 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LeadNova & GameLover | Yazılım Ekosistemi ve Kafe</title>
+    <title>Novexistech | Dijital İnteraktif Deneyim</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <nav class="navbar glass">
       <div class="nav-logo">
-        <a href="#">LEADNOVA <span>& GAMELOVER</span></a>
+        <a href="#">NOVEXIS<span>TECH</span></a>
       </div>
       <ul class="nav-links">
-        <li><a href="#hero">Ana Sayfa</a></li>
-        <li><a href="#portfolio">LeadNova</a></li>
-        <li><a href="#gaming-zone">GameLover Kafe</a></li>
-        <li><a href="#baron-bot">Bot & Yapay Zeka</a></li>
+        <li><a href="#hero">Ana Üs</a></li>
+        <li><a href="#gamelover">İnternet Kafe</a></li>
+        <li><a href="#portfolio">Yazılım</a></li>
+        <li><a href="#baron-lair">Baron Bot</a></li>
       </ul>
       <a href="https://wa.me/905374064175" target="_blank" class="btn btn-glow">Bize Ulaşın</a>
     </nav>
 
+    <!-- SAYFA 1: HUB / HERO ACCORDION -->
     <section id="hero" class="section">
       <div id="tsparticles"></div>
       
-      <div class="hero-content">
-        <h1 class="hero-headline brand-font">Güçlü Teknoloji,<br><span>Samimi Eğlence.</span></h1>
+      <div class="hero-header">
+        <h1 class="hero-headline brand-font">Siber Uzaya<br><span>Hoş Geldiniz.</span></h1>
         <div class="hero-subtitle"><span id="typed-text"></span></div>
       </div>
 
-      <div class="accordion-container">
-        <div class="accordion-item acc-yazilim" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop');">
-          <div class="accordion-content">
-            <h3>LeadNova Yazılım</h3>
-            <p>İşletmeleri büyüten otomasyon sistemleri ve web projeleri.</p>
-          </div>
-        </div>
-        <div class="accordion-item acc-kafe" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop');">
-          <div class="accordion-content">
+      <div class="accordion-container scroll-reveal">
+        <div class="accordion-panel" data-target="#gamelover" style="background-image: url('/images/kafe1.jpeg');">
+          <div class="panel-content">
             <h3>GameLover Kafe</h3>
-            <p>Sıcak bir ortam, Prime koltuklar ve kesintisiz oyun.</p>
+            <p>Fiziksel donanım, VIP odalar ve 7/24 oyuncu atmosferi.</p>
           </div>
         </div>
-        <div class="accordion-item acc-bot" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop');">
-          <div class="accordion-content">
-            <h3>Yapay Zeka (BARON)</h3>
-            <p>Spor analizleri ve yüksek isabetli tahmin botu.</p>
+        <div class="accordion-panel" data-target="#portfolio" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop');">
+          <div class="panel-content">
+            <h3>Yaratıcılık Merkezi</h3>
+            <p>İşletmelere özel web, mobil app ve entegrasyonlar.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- LEADNOVA PROJECT SECTION PRIORITIZED -->
-    <section id="portfolio" class="section">
-      <h2 class="section-title scroll-reveal">LeadNova <span>Projeleri</span></h2>
-      <p style="text-align: center; color: var(--text-secondary); max-width: 600px; margin: -20px auto 40px auto; font-size: 1.1rem;">İşletmenizi bir üst seviyeye taşıyacak, özel geliştirilmiş yerli mobil uygulamalar, otomasyon sistemleri ve web tabanlı ticari çözümler.</p>
-      
-      <div class="portfolio-grid">
-        <div class="portfolio-card" style="border: 2px solid rgba(37, 211, 102, 0.4); box-shadow: 0 10px 30px rgba(37,211,102,0.15);">
-          <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop'); display: flex; justify-content: center; align-items: center; position: relative;">
-            <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.65);"></div>
-            <div style="z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-              <i class="fa-brands fa-whatsapp" style="font-size: 5.5rem; color: #25D366; text-shadow: 0 0 25px rgba(37, 211, 102, 0.8);"></i>
-              <span style="color: #fff; font-weight: bold; margin-top: 10px; font-size: 1.2rem; letter-spacing: 2px;">BUSINESS</span>
-            </div>
-          </div>
-          <div class="portfolio-details glass">
-            <div>
-              <h4 style="color: #25D366;">WhatsApp Otomasyonu</h4>
-              <div class="tech-stack">İşletmenize Özel Bot Sistemi</div>
-            </div>
-            <a href="https://leadnovawp.onrender.com" target="_blank" class="btn btn-glow ripple-btn" style="padding: 8px 15px; border-color: #25d366; color: #25d366; text-decoration: none;">Canlı Demo</a>
-          </div>
-        </div>
-
-        <div class="portfolio-card">
-          <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop');"></div>
-          <div class="portfolio-details glass">
-            <div>
-              <h4>Ne Yesek App</h4>
-              <div class="tech-stack">Mobil Uygulama</div>
-            </div>
-            <a href="https://play.google.com/store/apps/details?id=com.neyesek.app&hl=tr&pli=1" target="_blank" class="btn btn-glow ripple-btn" style="padding: 8px 15px; text-decoration: none;">Google Play</a>
-          </div>
-        </div>
-        
-        <div class="portfolio-card">
-          <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop');"></div>
-          <div class="portfolio-details glass">
-            <div>
-              <h4>Kurumsal Çözümler</h4>
-              <div class="tech-stack">Özel Yazılım & Web Siteleri</div>
-            </div>
-            <a href="https://wa.me/905374064175" target="_blank" class="btn btn-glow ripple-btn" style="padding: 8px 15px; text-decoration: none;">İletişim</a>
+        <div class="accordion-panel" data-target="#baron" style="background-image: url('/images/baron.jpeg');">
+          <div class="panel-content">
+            <h3>BARON AI</h3>
+            <p>Otonom spor analiz botları ve Discord algoritmaları.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- GAMING ZONE SECTION -->
-    <section id="gaming-zone" class="section">
+    <!-- SAYFA 2: GAMING ZONE -->
+    <section id="gamelover" class="section">
       <div class="laser-scanner"></div>
-      <h2 class="section-title">GameLover <span>Ortamımız</span></h2>
-      
-      <div class="hardware-grid">
-        <div class="hardware-card glass tilt-card">
-          <i class="fa-solid fa-mug-hot"></i>
-          <h3>Samimi Atmosfer</h3>
-          <p>Sadece bir kafe değil, oyuncu topluluğu.</p>
+      <h2 class="section-title scroll-reveal">KAFE: <span>Donanım Merkezi</span></h2>
+
+      <!-- VIP KISMI (VIDEO) -->
+      <div class="vip-area-container scroll-reveal glass" style="border-radius: 12px; border: 1px solid var(--neon-purple);">
+        <video class="vip-video-bg" autoplay loop muted playsinline>
+          <source src="/images/kafe-vid.mp4" type="video/mp4">
+        </video>
+
+        <!-- Tooltipler -->
+        <div class="tooltip-point" style="top: 30%; left: 40%;">
+          <i class="fa-solid fa-microchip"></i>
+          <div class="tooltip-content">RTX 4090 / i9 Sistemler</div>
         </div>
-        <div class="hardware-card glass tilt-card">
-          <i class="fa-solid fa-gamepad"></i>
-          <h3>GTX 1660 Super</h3>
-          <p>E-Spor oyunlarında akıcı performans.</p>
+        <div class="tooltip-point" style="top: 50%; left: 70%;">
+          <i class="fa-solid fa-desktop"></i>
+          <div class="tooltip-content">240Hz Zowie Monitörler</div>
         </div>
-        <div class="hardware-card glass tilt-card">
+        <div class="tooltip-point" style="top: 70%; left: 20%;">
           <i class="fa-solid fa-chair"></i>
-          <h3>Prime Koltuklar</h3>
-          <p>Saatlerce süren rahat ve ergonomik oyun deneyimi.</p>
+          <div class="tooltip-content">DXRacer VIP Koltuklar</div>
         </div>
       </div>
 
-      <h2 class="section-title" style="margin-top: 60px;">Kafe <span>Tarifelerimiz</span></h2>
-      <div class="pricing-table">
-        <div class="price-card glass tilt-card">
-          <h3>Misafir (Saatlik)</h3>
-          <div class="price">₺90</div>
-          <p>Anlık gelen misafirlerimiz için</p>
-          <p>standart saatlik ücret.</p>
-          <br>
+      <!-- Fiyatlandırma -->
+      <div class="pricing-grid scroll-reveal">
+        <div class="pricing-card glass tilt-card">
+          <h3>Normal Ziyaretçi</h3>
+          <div class="pricing-price">90<span>₺ / saat</span></div>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;">Standart masa kiralama ve donanım erişimi.</p>
+          <button class="btn btn-glow" style="width: 100%; border-color: var(--neon-purple); color: var(--neon-purple);">Rezerve Et</button>
         </div>
-        <div class="price-card glass tilt-card" style="border-color: var(--neon-blue);">
-          <h3>GameLover Üye</h3>
-          <div class="price">₺75<span style="font-size: 1rem;">/saat</span></div>
-          <p>Üyelerimize özel indirimli fiyat</p>
-          <p>Hesabına bakiye yükle, kazan!</p>
-          <br>
-          <div style="background: rgba(0,243,255,0.1); padding: 10px; border-radius: 8px; border: 1px solid var(--neon-blue);">
-            <strong style="color: var(--neon-blue);">🔥 Fırsat:</strong> 500 ₺ yüklemeye <strong>100 ₺ Bonus!</strong>
-          </div>
+        <div class="pricing-card glass tilt-card premium">
+          <h3>Ayrıcalıklı Üye</h3>
+          <div class="pricing-price">75<span>₺ / saat</span></div>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;">Hesaplı oyun süresi ve VIP önceliği.</p>
+          <button class="btn btn-glow" style="width: 100%; border-color: var(--neon-purple); color: var(--neon-purple);">Kayıt Ol</button>
         </div>
       </div>
     </section>
 
-    <!-- BARON BOT SECTION -->
-    <section id="baron-bot" class="section">
-      <div class="baron-header scroll-reveal">
-        <h1 class="glitch-text" data-text="BARON AI">BARON AI</h1>
-        <div class="terminal-text" id="terminal-text"></div>
+    <!-- SAYFA 3: YAZILIM / MASONRY GRID -->
+    <section id="portfolio" class="section" style="background-color: rgba(10, 10, 15, 0.7);">
+      <h2 class="section-title scroll-reveal">YAZILIM: <span>Koddan Ürüne</span></h2>
+      
+      <div class="masonry-grid scroll-reveal">
+        
+        <!-- Ne Yesek -->
+        <div class="masonry-item">
+          <img src="/images/neyesek.png" alt="Ne Yesek" class="masonry-img">
+          <div class="masonry-info">
+            <h4>Ne Yesek App</h4>
+            <div class="tech-stack">Mobil Uygulama (Play Store)</div>
+            <div class="logos">
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-node-js"></i>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.neyesek.app&hl=tr" target="_blank" class="btn btn-glow ripple-btn" style="padding: 8px 15px; margin-top: 10px;">İndir <i class="fa-solid fa-download"></i></a>
+          </div>
+        </div>
+
+        <!-- LeadNova WP -->
+        <div class="masonry-item">
+          <img src="/images/leadnova-wp.jpeg" alt="LeadNova WP" class="masonry-img">
+          <div class="masonry-info">
+            <h4>LeadNova WP</h4>
+            <div class="tech-stack">WhatsApp Otomasyon Botu</div>
+            <div class="logos">
+              <i class="fa-brands fa-python"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <a href="https://leadnovawp.onrender.com" target="_blank" class="btn btn-glow ripple-btn" style="padding: 8px 15px; margin-top: 10px; border-color: var(--neon-green); color: var(--neon-green);">Canlı Demo <i class="fa-solid fa-play"></i></a>
+          </div>
+        </div>
+
+        <!-- Placeholder 3 -->
+        <div class="masonry-item">
+          <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop" alt="Web Dev" class="masonry-img">
+          <div class="masonry-info">
+            <h4>Kurumsal Mimari</h4>
+            <div class="tech-stack">Özel E-Ticaret ve B2B Arayüzleri</div>
+            <div class="logos">
+              <i class="fa-brands fa-vuejs"></i>
+              <i class="fa-brands fa-aws"></i>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="bot-showcase">
+      <div class="stats-banner glass scroll-reveal">
+        <div class="stat-box">
+          <span class="counter" data-target="45">0</span>
+          <span class="brand-font" style="color: #fff;">Teslim Edilen Proje</span>
+        </div>
+        <div class="stat-box">
+          <span class="counter" data-target="150000">0</span>
+          <span class="brand-font" style="color: #fff;">Satır Kod Yazıldı</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAYFA 4: BARON'S LAIR -->
+    <section id="baron-lair" class="section">
+      <div class="scroll-reveal" style="text-align: center;">
+        <h1 class="glitch-text" data-text="BARON AI">BARON AI</h1>
+        <div class="terminal-text">> Sistem_Aktif.. Bot_Hazır..</div>
+      </div>
+
+      <div class="bot-dashboard scroll-reveal">
+        
+        <!-- Discord Mockup -->
         <div class="discord-mock">
           <div class="discord-header">
-            <i class="fa-solid fa-robot"></i> BARON Canlı Analiz Ekranı
+            <i class="fa-brands fa-discord"></i> BARON Private Lair Server
           </div>
           <div class="discord-messages" id="discord-messages">
-            </div>
+              <div style="text-align: center; color: var(--text-secondary); margin-top: 50px;">
+                  Sinyal bekleniyor... Analizi başlatın.
+              </div>
+          </div>
         </div>
 
-        <div class="bot-controls glass tilt-card">
-          <h3 style="font-size: 1.8rem; color: var(--neon-red);">Yapay Zeka Performansı</h3>
+        <!-- Controls & Pricing -->
+        <div class="pricing-control glass tilt-card" style="padding: 30px; border-color: rgba(255,0,60,0.3);">
+          <button id="baron-trigger" class="btn btn-glow" style="width: 100%; border-color: var(--neon-red); color: var(--neon-red); margin-bottom: 40px; box-shadow: 0 0 15px rgba(255,0,60,0.4);">
+            Canlı Bahis Analizi Başlat <i class="fa-solid fa-satellite-dish"></i>
+          </button>
+
+          <h3 style="color: #fff; margin-bottom: 15px;">Bot Kurulum Seçenekleri</h3>
           
-          <div style="display: flex; justify-content: space-between; margin-top: 15px; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px;">
-            <div style="text-align: center;">
-              <span style="display: block; font-size: 0.9rem; color: var(--text-secondary);">Tracked Matches</span>
-              <strong style="font-size: 1.5rem; color: #fff;" id="tracked-matches">2,140</strong>
-            </div>
-            <div style="text-align: center;">
-              <span style="display: block; font-size: 0.9rem; color: var(--text-secondary);">AI Accuracy</span>
-              <strong style="font-size: 1.5rem; color: #0f0;" id="ai-accuracy">%0.0</strong>
+          <div class="toggle-switch">
+            <div class="toggle-btn active" id="toggle-monthly">Aylık</div>
+            <div class="toggle-btn" id="toggle-yearly">Yıllık (-20% İndirim)</div>
+          </div>
+
+          <div class="flip-container">
+            <div class="flip-card" id="pricing-flip-card">
+              <!-- Front (Monthly) -->
+              <div class="flip-front">
+                <h4 class="pack-title">Aylık Kiralama</h4>
+                <div class="pack-price">1.500<span>₺ / ay</span></div>
+                <ul style="list-style: none; color: var(--text-secondary); text-align: left; line-height: 2; margin-bottom: 20px;">
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> Sınırsız Canlı Analiz</li>
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> Discord/TG Entegrasyonu</li>
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> 7/24 Sunucu Desteği</li>
+                </ul>
+                <button class="btn btn-glow" style="border-color: var(--neon-red); color: var(--neon-red); width: 100%;">Satın Al</button>
+              </div>
+              
+              <!-- Back (Yearly) -->
+              <div class="flip-back">
+                <h4 class="pack-title">Yıllık Lisans</h4>
+                <div class="pack-price">14.400<span>₺ / yıl</span></div>
+                <ul style="list-style: none; color: var(--text-secondary); text-align: left; line-height: 2; margin-bottom: 20px;">
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> Sınırsız Canlı Analiz</li>
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> Özel Markalama (White-label)</li>
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> Öncelikli Algoritma</li>
+                </ul>
+                <button class="btn btn-glow" style="border-color: var(--neon-red); color: var(--neon-red); width: 100%;">Satın Al</button>
+              </div>
             </div>
           </div>
 
-          <p style="margin-top: 15px; font-size: 0.9rem;">Sistem canlı verileri <a href="https://betbotai.onrender.com/" target="_blank" style="color: var(--neon-blue);">betbotai</a> altyapısından çekerek analiz eder.</p>
-          
-          <button class="btn btn-neon-red" id="trigger-analysis-btn" style="margin-top: 10px;">Son 4 Analizi Çek <i class="fa-solid fa-satellite-dish"></i></button>
-
-          <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 15px;">
-            <a href="https://t.me/+nt1xcLIFHwtlN2M0" target="_blank" class="btn btn-glow" style="text-align: center; border-color: #0088cc; color: #0088cc;">
-              Daha Fazla Maç İçin Telegram'a Katıl <i class="fa-brands fa-telegram"></i>
-            </a>
-            
-            <a href="https://wa.me/905374064175" target="_blank" class="btn btn-neon-red btn-pulsing" style="text-align: center; border-color: #25D366; color: #25D366; box-shadow: none;">
-              WhatsApp'tan İletişime Geç <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
         </div>
+
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer-logo">LeadNova Tarafından Geliştirildi</div>
+      <div class="footer-logo">Novexistech Dijital</div>
       <div class="social-links">
         <a href="https://wa.me/905374064175" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-discord"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
       </div>
     </footer>
 
