@@ -60,6 +60,29 @@ VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
   "max-glare": 0.15,
 });
 
+// --- 3.5 Mobile Menu Toggle ---
+const mobileToggle = document.getElementById('mobile-toggle');
+const navLinksDOM = document.getElementById('nav-links');
+if (mobileToggle && navLinksDOM) {
+  mobileToggle.addEventListener('click', () => {
+    navLinksDOM.classList.toggle('active');
+    const icon = mobileToggle.querySelector('i');
+    if (navLinksDOM.classList.contains('active')) {
+      icon.classList.replace('fa-bars', 'fa-xmark');
+    } else {
+      icon.classList.replace('fa-xmark', 'fa-bars');
+    }
+  });
+
+  // Mobil navigasyonda bir linke tıklayınca menüyü kapat
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinksDOM.classList.remove('active');
+      mobileToggle.querySelector('i').classList.replace('fa-xmark', 'fa-bars');
+    });
+  });
+}
+
 // --- 4. Navbar Sticky / Scroll Reveal ---
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
