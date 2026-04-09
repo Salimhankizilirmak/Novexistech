@@ -445,19 +445,19 @@ h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', sans-serif; }
 
 .masonry-info {
   position: absolute;
-  bottom: 0; left: 0; width: 100%;
+  top: 0; left: 0; width: 100%; height: 100%;
   padding: 25px;
-  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5), transparent);
-  transform: translateY(70px);
-  transition: transform 0.4s ease;
-  display: flex; flex-direction: column; gap: 10px;
+  background: rgba(10, 10, 15, 0.85);
+  opacity: 0;
+  transition: all 0.4s ease;
+  display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 15px;
 }
-.masonry-item:hover .masonry-info { transform: translateY(0); }
-.masonry-info h4 { font-size: 1.5rem; color: #fff; }
-.masonry-info .tech-stack { color: var(--neon-cyan); }
-.masonry-info .logos { display: flex; gap: 15px; margin-top: 5px; opacity: 0; transition: opacity 0.5s 0.2s; }
-.masonry-item:hover .masonry-info .logos { opacity: 1; }
-.masonry-info .logos i { font-size: 1.5rem; color: #fff; }
+.masonry-item:hover .masonry-info { opacity: 1; }
+.masonry-info h4 { font-size: 1.8rem; color: #fff; margin: 0;}
+.masonry-info .tech-stack { color: var(--neon-cyan); font-weight: 500; letter-spacing: 1px; margin: 0;}
+.masonry-info .logos { display: flex; gap: 15px; justify-content: center; margin-top: 5px; transform: translateY(20px); transition: transform 0.4s ease; }
+.masonry-item:hover .masonry-info .logos { transform: translateY(0); }
+.masonry-info .logos i { font-size: 1.8rem; color: #fff; }
 
 .ripple-btn { position: relative; overflow: hidden; }
 

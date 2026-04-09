@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar glass">
       <div class="nav-logo">
         <a href="index.html">LEAD<span>NOVA</span></a>
@@ -15,18 +16,17 @@
         <li><a href="index.html">Ana Sayfa</a></li>
         <li><a href="#gamelover" style="color: var(--neon-purple);">🎮 GameLover Kafe</a></li>
       </ul>
-      <a href="https://wa.me/905374064175" target="_blank" class="btn btn-glow">Bize Ulaşın</a>
+      <a href="https://wa.me/905374064175" target="_blank" class="btn btn-glow">Rezervasyon Yap</a>
     </nav>
 
-    <!-- KAFE HEADER -->
-    <section class="section" style="padding-top: 150px; min-height: auto; align-items: center; text-align: center;">
-      <h1 class="hero-headline brand-font">Oyuncuların <span style="color: var(--neon-purple); text-shadow: 0 0 25px rgba(188, 19, 254, 0.6);">Siber Üssü</span></h1>
-      <p style="color: var(--text-secondary); max-width: 600px; margin-top: 20px;">En üst düzey donanımlar ve kesintisiz fiber hızında internet ile maksimum performans.</p>
-    </section>
-
-    <!-- SAYFA 2: GAMING ZONE -->
-    <section id="gamelover" class="section" style="padding-top: 0;">
+    <!-- SAYFA: GAMING ZONE ANA EKRANI -->
+    <section id="gamelover" class="section" style="padding-top: 150px; background: radial-gradient(circle at center, #1a0b2e 0%, #0a0a0c 100%); position: relative; border-bottom: 1px solid rgba(188, 19, 254, 0.2);">
       <div class="laser-scanner"></div>
+
+      <div class="scroll-reveal" style="text-align: center; margin-bottom: 50px;">
+        <h1 class="brand-font" style="font-size: 3.5rem; color: #fff; margin-bottom: 15px;">Oyuncuların <span style="color: var(--neon-purple); text-shadow: 0 0 25px rgba(188, 19, 254, 0.6);">Siber Üssü</span></h1>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Türkiye'nin en donanımlı internet ve E-Spor deneyim merkezi. Kesintisiz fiber hız ve 360Hz akıcılık ile maksimum performansı keşfedin.</p>
+      </div>
       
       <!-- VIP KISMI (VIDEO) -->
       <div class="vip-area-container scroll-reveal glass" style="border-radius: 12px; border: 1px solid var(--neon-purple);">
@@ -36,38 +36,90 @@
 
         <!-- Tooltipler -->
         <div class="tooltip-point" style="top: 30%; left: 40%;">
-          <i class="fa-solid fa-microchip"></i>
-          <div class="tooltip-content">RTX 4090 / i9 Sistemler</div>
+          <i class="fa-solid fa-bolt"></i>
+          <div class="tooltip-content" style="border-color: var(--neon-purple);">RTX 4090 / i9 İşlemciler</div>
         </div>
         <div class="tooltip-point" style="top: 50%; left: 70%;">
           <i class="fa-solid fa-desktop"></i>
-          <div class="tooltip-content">240Hz Zowie Monitörler</div>
+          <div class="tooltip-content" style="border-color: var(--neon-purple);">Zowie 360Hz E-Spor Monitörü</div>
         </div>
         <div class="tooltip-point" style="top: 70%; left: 20%;">
           <i class="fa-solid fa-chair"></i>
-          <div class="tooltip-content">DXRacer VIP Koltuklar</div>
-        </div>
-      </div>
-
-      <!-- Fiyatlandırma -->
-      <div class="pricing-grid scroll-reveal" style="margin-top: 50px;">
-        <div class="pricing-card glass tilt-card">
-          <h3>Normal Ziyaretçi</h3>
-          <div class="pricing-price">90<span>₺ / saat</span></div>
-          <p style="color: var(--text-secondary); margin-bottom: 20px;">Standart masa kiralama ve donanım erişimi.</p>
-          <button class="btn btn-glow" style="width: 100%; border-color: var(--neon-purple); color: var(--neon-purple);">Rezerve Et</button>
-        </div>
-        <div class="pricing-card glass tilt-card premium">
-          <h3>Ayrıcalıklı Üye</h3>
-          <div class="pricing-price">75<span>₺ / saat</span></div>
-          <p style="color: var(--text-secondary); margin-bottom: 20px;">Hesaplı oyun süresi ve VIP önceliği.</p>
-          <button class="btn btn-glow" style="width: 100%; border-color: var(--neon-purple); color: var(--neon-purple);">Kayıt Ol</button>
+          <div class="tooltip-content" style="border-color: var(--neon-purple);">DXRacer Titreşimli Koltuklar</div>
         </div>
       </div>
     </section>
 
+    <!-- DONANIM ÖZELLİKLERİ -->
+    <section class="section" style="background-color: var(--bg-color);">
+      <h2 class="section-title scroll-reveal">TEKNİK <span>ALTYAPI</span></h2>
+      <p style="text-align: center; color: var(--text-secondary); margin: -40px 0 50px 0;">Oyun zevkini sekteye uğratacak hiçbir gecikmeye yer yok.</p>
+
+      <div class="hardware-grid scroll-reveal">
+        <div class="hardware-card glass tilt-card" style="border-color: rgba(188, 19, 254, 0.3);">
+          <i class="fa-solid fa-network-wired" style="color: var(--neon-purple);"></i>
+          <h3>Gigabit Fiber Ağ</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 15px;">Mekanımızdaki tüm masalar doğrudan OM4 fiber optik ile Router'a bağlıdır. Ping sorunu yaşamadan global sunuculara anında bağlanın.</p>
+        </div>
+        <div class="hardware-card glass tilt-card" style="border-color: rgba(188, 19, 254, 0.3);">
+          <i class="fa-solid fa-microchip" style="color: var(--neon-cyan);"></i>
+          <h3 style="color: var(--neon-cyan);">RTX & Core i9 Ekipman</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 15px;">Grafik takılmaları tarih oldu. Yayıncılar ve profesyoneller düşünülerek hazırlanan kasalarımızda Ultra ayarlarda akıcı oyun imkanı.</p>
+        </div>
+        <div class="hardware-card glass tilt-card" style="border-color: rgba(188, 19, 254, 0.3);">
+          <i class="fa-solid fa-headset" style="color: var(--neon-red);"></i>
+          <h3 style="color: var(--neon-red);">Stüdyo Sınıfı Ses</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 15px;">Sanal 7.1 çevresel ses desteği sunan premium E-Spor kulaklıkları sayesinde rakibin adımını ondan önce duyun.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERİ (MASONRY ILE) -->
+    <section class="section" style="padding-top: 20px;">
+        <h2 class="section-title scroll-reveal">ATMOSFER: <span>GameLover</span></h2>
+        <div class="masonry-grid scroll-reveal" style="columns: 2 300px; max-width: 1000px;">
+            <div class="masonry-item" style="border-color: var(--neon-purple);">
+                <img src="/images/kafe1.jpeg" alt="GameLover VIP Salon" class="masonry-img">
+                <div class="masonry-info" style="background: rgba(26, 11, 46, 0.85);">
+                    <h4 style="color: var(--neon-purple);">VIP ODA 1</h4>
+                    <p style="color: #fff; margin-top: 10px;">Turnuva ve takım antrenmanları için izole alan.</p>
+                </div>
+            </div>
+            <div class="masonry-item" style="margin-top: 50px; border-color: var(--neon-purple);">
+                <img src="/images/gamelover2.jpeg" alt="GameLover Ana Salon" class="masonry-img">
+                <div class="masonry-info" style="background: rgba(26, 11, 46, 0.85);">
+                    <h4 style="color: var(--neon-purple);">Yayıncı Kasaları</h4>
+                    <p style="color: #fff; margin-top: 10px;">Ultra geniş monitörler ile profesyonel seri.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FİYATLANDIRMA -->
+    <section class="section" style="background-color: var(--bg-color); border-top: 1px solid rgba(188, 19, 254, 0.2);">
+      <div class="scroll-reveal" style="text-align: center; margin-bottom: 50px;">
+        <h2 class="section-title" style="margin: 0;">REZERVE <span>ET</span></h2>
+      </div>
+
+      <div class="pricing-grid scroll-reveal">
+        <div class="pricing-card glass tilt-card" style="background: rgba(10, 10, 15, 0.8);">
+          <h3>Standart İstasyon</h3>
+          <div class="pricing-price">90<span>₺ / saat</span></div>
+          <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">Orta-Üst seviye donanım olanakları ile gündelik rekabetçi oyun zevki.</p>
+          <a href="https://wa.me/905374064175" class="btn btn-glow" style="width: 100%; border-color: var(--neon-purple); color: var(--neon-purple);">Masa Ayırt</a>
+        </div>
+        <div class="pricing-card glass tilt-card premium" style="background: rgba(26, 11, 46, 0.6);">
+          <h3>VIP E-Spor Odası</h3>
+          <div class="pricing-price">75<span>₺ / saat</span></div>
+          <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.6;">Üyelere özel, RTX 4090 destekli premium donanım ve öncelikli hizmet.</p>
+          <a href="https://wa.me/905374064175" class="btn btn-glow" style="width: 100%; border-color: var(--neon-purple); color: #fff; background: var(--neon-purple);">VIP Üye Ol</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-logo">LeadNova Tarafından Geliştirildi</div>
+      <div class="footer-logo">LeadNova & GameLover Partnership</div>
       <div class="social-links">
         <a href="https://wa.me/905374064175" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
         <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
