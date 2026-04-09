@@ -146,14 +146,23 @@ if (baronFeed) {
                         if (i < mockAnalysis.length) {
                             const data = mockAnalysis[i];
                             const analysisCard = document.createElement('div');
-                            analysisCard.style.cssText = "background: rgba(0, 0, 0, 0.4); border-left: 3px solid var(--neon-cyan); padding: 20px; border-radius: 6px; animation: slideIn 0.5s ease forwards; opacity: 0; transform: translateX(-20px);";
+                            analysisCard.style.cssText = "background: linear-gradient(135deg, rgba(20,22,30,0.9), rgba(10,12,18,0.95)); border: 1px solid rgba(0,243,255,0.15); border-left: 4px solid var(--neon-cyan); padding: 25px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); animation: slideIn 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; opacity: 0; transform: translateX(-30px); margin-bottom: 5px;";
                             
                             analysisCard.innerHTML = `
-                                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(0,243,255,0.2); padding-bottom: 10px; margin-bottom: 15px;">
-                                    <h5 style="color: #fff; font-size: 1.1rem;"><span style="color: var(--neon-cyan);">[MATCH]</span> ${data.home} vs ${data.away}</h5>
-                                    <span style="color: var(--neon-cyan); font-weight: 700;">HEDEF: ${data.target} (@${data.odds})</span>
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 15px; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
+                                    <div>
+                                        <span style="color: var(--neon-cyan); font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase;"><i class="fa-solid fa-bolt"></i> Sinyal Eşleşti</span>
+                                        <h4 style="color: #fff; font-size: 1.3rem; margin: 8px 0 0 0; font-family: 'Space Grotesk', sans-serif;">${data.home} <span style="color: var(--text-secondary); font-size: 1rem;">vs</span> ${data.away}</h4>
+                                    </div>
+                                    <div style="text-align: right; background: rgba(0, 243, 255, 0.05); padding: 10px 20px; border-radius: 8px; border: 1px solid rgba(0, 243, 255, 0.2);">
+                                        <div style="color: var(--text-secondary); font-size: 0.8rem; margin-bottom: 3px;">TAHMİN HEDEFİ</div>
+                                        <strong style="color: var(--neon-cyan); font-size: 1.2rem;">${data.target} <span style="color: #fff;">(@${data.odds})</span></strong>
+                                    </div>
                                 </div>
-                                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;"><strong style="color: #bc13fe;">AI TESPİTİ:</strong> ${data.commentary}</p>
+                                <div style="display: flex; gap: 15px; align-items: stretch;">
+                                   <div style="min-width: 4px; background: linear-gradient(to bottom, #bc13fe, transparent); border-radius: 2px;"></div>
+                                   <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin: 0; padding-top: 5px;"><strong style="color: #fff;">Derin Öğrenme Tespiti:</strong> ${data.commentary}</p>
+                                </div>
                             `;
                             baronFeed.appendChild(analysisCard);
                             baronFeed.scrollTop = baronFeed.scrollHeight;

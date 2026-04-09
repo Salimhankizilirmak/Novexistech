@@ -170,27 +170,40 @@
 
     <!-- SAYFA 4: BARON'S LAIR (New Radar/AI Commentary Panel) -->
     <section id="baron-lair" class="section">
-      <div class="scroll-reveal" style="text-align: center;">
-        <h1 class="brand-font" style="font-size: 3.5rem; color: #fff;">BARON <span style="color: var(--neon-cyan); text-shadow: 0 0 20px rgba(0, 243, 255, 0.4);">A.I</span></h1>
-        <div class="terminal-text">> Predictor_Engine_V4.. Active_Feed_Established..</div>
+      <div class="scroll-reveal" style="text-align: center; margin-bottom: 50px;">
+        <h1 class="brand-font" style="font-size: 3.5rem; color: #fff; margin-bottom: 20px;">BARON <span style="color: var(--neon-cyan); text-shadow: 0 0 20px rgba(0, 243, 255, 0.4);">A.I</span></h1>
+        <div class="terminal-text" style="display: block; margin-top: 15px;">> Predictor_Engine_V4.. Active_Feed_Established..</div>
       </div>
 
       <div class="baron-radar-container scroll-reveal" style="width: 100%; max-width: 1100px; margin-top: 30px;">
         <div class="radar-header" style="background: rgba(0,0,0,0.8); border: 1px solid rgba(0,243,255,0.4); border-bottom: none; border-radius: 16px 16px 0 0; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
-          <div style="color: var(--neon-cyan); font-family: 'Space Grotesk', sans-serif;"><i class="fa-solid fa-microchip"></i> Canlı Veri Akışı / Yorumlu Analiz Mode</div>
+          <div style="color: var(--neon-cyan); font-family: 'Space Grotesk', sans-serif;"><i class="fa-solid fa-microchip"></i> Canlı Veri Akışı / Yorumlu Analiz Modeli</div>
           <div style="display: flex; gap: 15px;">
-             <span style="color: var(--text-secondary); font-size: 0.9rem;">Analiz Hazırlığı: <strong style="color: #0f0;">100%</strong></span>
+             <span style="color: var(--text-secondary); font-size: 0.9rem;">Model Doğruluğu: <strong style="color: #0f0;">%86</strong></span>
              <span style="color: var(--text-secondary); font-size: 0.9rem;">Durum: <strong style="color: #0f0;">ÇEVRİMİÇİ</strong></span>
           </div>
         </div>
 
-        <div class="radar-body" style="background: rgba(10, 12, 18, 0.85); border: 1px solid rgba(0,243,255,0.4); border-radius: 0 0 16px 16px; padding: 30px; min-height: 400px; max-height: 500px; overflow-y: auto; display: flex; flex-direction: column; gap: 20px;" id="baron-live-feed">
+        <div class="radar-body" style="background: rgba(10, 12, 18, 0.85); border: 1px solid rgba(0,243,255,0.4); border-bottom: none; padding: 30px; min-height: 400px; max-height: 500px; overflow-y: auto; display: flex; flex-direction: column; gap: 20px;" id="baron-live-feed">
            
            <div style="text-align: center; color: var(--text-secondary); margin-top: 80px;" id="baron-waiting-msg">
              <i class="fa-solid fa-satellite-dish fa-spin" style="font-size: 3rem; margin-bottom: 20px; color: var(--neon-cyan);"></i><br>
              Yapay Zeka sistemi sinyalleri işliyor... Lütfen bekleyin.
            </div>
 
+        </div>
+
+        <!-- YENİ: Fiyatlandırma ve İletişim Footer Bağlantısı -->
+        <div class="radar-action-footer" style="background: rgba(0,0,0,0.9); border: 1px solid rgba(0,243,255,0.4); border-radius: 0 0 16px 16px; padding: 25px 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+          <div style="flex: 1;">
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 5px;">Bot Kurulum & Aylık Lisans</p>
+            <h2 style="color: #fff; font-size: 2rem; margin: 0;">1.500 <span style="font-size: 1rem; color: var(--neon-cyan);">₺ / Ay</span></h2>
+            <p style="color: var(--text-secondary); font-size: 0.8rem; margin-top: 5px;">*Yıllık opsiyonda %20 indirim uygulanmaktadır.</p>
+          </div>
+          <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <a href="https://t.me/" target="_blank" class="btn btn-glow" style="border-color: #0088cc; color: #0088cc;"><i class="fa-brands fa-telegram"></i> Telegram Kanalı</a>
+            <a href="https://wa.me/905374064175" target="_blank" class="btn btn-glow" style="border-color: #25D366; color: #25D366;"><i class="fa-brands fa-whatsapp"></i> Satın Al / Sor</a>
+          </div>
         </div>
 
       </div>
