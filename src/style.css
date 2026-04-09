@@ -364,13 +364,13 @@ h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', sans-serif; }
 }
 .glitch-text {
   font-family: 'Syncopate', sans-serif; font-size: 5rem;
-  color: var(--neon-red); position: relative; display: inline-block;
+  color: var(--neon-cyan); position: relative; display: inline-block;
 }
 .glitch-text::before, .glitch-text::after {
   content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.8;
 }
-.glitch-text::before { color: #00f3ff; z-index: -1; animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite; }
-.glitch-text::after { color: #ff003c; z-index: -2; animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) reverse both infinite; }
+.glitch-text::before { color: #bc13fe; z-index: -1; animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite; }
+.glitch-text::after { color: #00f3ff; z-index: -2; animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) reverse both infinite; }
 @keyframes glitch {
   0% { transform: translate(0) }
   20% { transform: translate(-2px, 2px) }

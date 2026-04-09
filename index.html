@@ -15,7 +15,8 @@
         <li><a href="#hero">Ana Üs</a></li>
         <li><a href="#portfolio">Yazılım</a></li>
         <li><a href="#baron-lair">Baron Bot</a></li>
-        <li><a href="gamelover.html" style="color: var(--neon-purple);">🎮 GameLover Kafe</a></li>
+        <li><a href="#faq">İletişim / SSS</a></li>
+        <li><a href="gamelover.html" style="color: #bc13fe;">🎮 Gamelover</a></li>
       </ul>
       <a href="https://wa.me/905374064175" target="_blank" class="btn btn-glow">Bize Ulaşın</a>
     </nav>
@@ -30,24 +31,27 @@
       </div>
 
       <div class="accordion-container scroll-reveal">
-        <div class="accordion-panel" data-target="#portfolio" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop'); border-color: rgba(0, 243, 255, 0.3);">
+        <!-- 1. Süreç Otomasyonu (LeadNova WP) -->
+        <a href="https://leadnovawp.onrender.com/" target="_blank" class="accordion-panel" style="background-image: url('/images/leadnova-wp.jpeg'); border-color: rgba(0, 243, 255, 0.3); text-decoration: none;">
           <div class="panel-content">
-            <h3 style="color: var(--neon-cyan);">Yaratıcılık Merkezi</h3>
-            <p>İşletmelere özel web, mobil app ve UI/UX tasarımı.</p>
+            <h3 style="color: var(--neon-cyan);">Süreç Otomasyonu</h3>
+            <p>Kurumsal WhatsApp botları ve iş akışı optimizasyonu. (Sisteme Git)</p>
           </div>
-        </div>
-        <div class="accordion-panel" data-target="#baron" style="background-image: url('/images/baron.jpeg'); border-color: rgba(255, 0, 60, 0.3);">
+        </a>
+        <!-- 2. Ne Yesek -->
+        <a href="https://play.google.com/store/apps/details?id=com.neyesek.app&hl=tr" target="_blank" class="accordion-panel" style="background-image: url('/images/neyesek.png'); border-color: rgba(0, 243, 255, 0.3); text-decoration: none;">
           <div class="panel-content">
-            <h3 style="color: var(--neon-red);">BARON AI</h3>
+            <h3 style="color: var(--neon-cyan);">Ne Yesek App</h3>
+            <p>Yapay zeka detekli yemek ve mekan motoru. (Uygulamayı İndir)</p>
+          </div>
+        </a>
+        <!-- 3. BARON AI -->
+        <a href="#baron-lair" class="accordion-panel" style="background-image: url('/images/baron.jpeg'); border-color: rgba(0, 243, 255, 0.3); text-decoration: none;">
+          <div class="panel-content">
+            <h3 style="color: var(--neon-cyan);">BARON AI</h3>
             <p>Otonom spor analiz botları ve Discord algoritmaları.</p>
           </div>
-        </div>
-        <div class="accordion-panel" data-target="#automation" style="background-image: url('/images/leadnova-wp.jpeg'); border-color: rgba(37, 211, 102, 0.3);">
-          <div class="panel-content">
-            <h3 style="color: var(--neon-green);">Süreç Otomasyonu</h3>
-            <p>Kurumsal WhatsApp botları ve iş akışı optimizasyonu.</p>
-          </div>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -81,13 +85,13 @@
               <i class="fa-brands fa-python"></i>
               <i class="fa-brands fa-whatsapp"></i>
             </div>
-            <a href="https://leadnovawp.onrender.com" target="_blank" class="btn btn-glow ripple-btn" style="padding: 8px 15px; margin-top: 10px; border-color: var(--neon-green); color: var(--neon-green);">Canlı Demo <i class="fa-solid fa-play"></i></a>
+            <a href="https://leadnovawp.onrender.com" target="_blank" class="btn btn-glow ripple-btn" style="padding: 8px 15px; margin-top: 10px;">Canlı Demo <i class="fa-solid fa-play"></i></a>
           </div>
         </div>
 
-        <!-- Placeholder 3 -->
+        <!-- Kurumsal Mimari -->
         <div class="masonry-item">
-          <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1974&auto=format&fit=crop" alt="Web Dev" class="masonry-img">
+          <img src="/images/kurumsal.jpeg" alt="Web Dev" class="masonry-img">
           <div class="masonry-info">
             <h4>Kurumsal Mimari</h4>
             <div class="tech-stack">Özel E-Ticaret ve B2B Arayüzleri</div>
@@ -111,7 +115,7 @@
       </div>
     </section>
 
-    <!-- SAYFA 4: BARON'S LAIR -->
+    <!-- SAYFA 4: BARON'S LAIR (Theme updated to Cyan) -->
     <section id="baron-lair" class="section">
       <div class="scroll-reveal" style="text-align: center;">
         <h1 class="glitch-text" data-text="BARON AI">BARON AI</h1>
@@ -122,7 +126,7 @@
         
         <!-- Discord Mockup -->
         <div class="discord-mock">
-          <div class="discord-header">
+          <div class="discord-header" style="color: var(--neon-cyan);">
             <i class="fa-brands fa-discord"></i> BARON Private Lair Server
           </div>
           <div class="discord-messages" id="discord-messages">
@@ -133,14 +137,14 @@
         </div>
 
         <!-- Controls & Pricing -->
-        <div class="pricing-control glass tilt-card" style="padding: 30px; border-color: rgba(255,0,60,0.3);">
-          <button id="baron-trigger" class="btn btn-glow" style="width: 100%; border-color: var(--neon-red); color: var(--neon-red); margin-bottom: 40px; box-shadow: 0 0 15px rgba(255,0,60,0.4);">
+        <div class="pricing-control glass tilt-card" style="padding: 30px; border-color: rgba(0, 243, 255, 0.3);">
+          <button id="baron-trigger" class="btn btn-glow" style="width: 100%; border-color: var(--neon-cyan); margin-bottom: 40px; box-shadow: 0 0 15px rgba(0,243,255,0.2);">
             Canlı Bahis Analizi Başlat <i class="fa-solid fa-satellite-dish"></i>
           </button>
 
           <h3 style="color: #fff; margin-bottom: 15px;">Bot Kurulum Seçenekleri</h3>
           
-          <div class="toggle-switch">
+          <div class="toggle-switch" style="border-color: rgba(0, 243, 255, 0.3);">
             <div class="toggle-btn active" id="toggle-monthly">Aylık</div>
             <div class="toggle-btn" id="toggle-yearly">Yıllık (-20% İndirim)</div>
           </div>
@@ -148,27 +152,27 @@
           <div class="flip-container">
             <div class="flip-card" id="pricing-flip-card">
               <!-- Front (Monthly) -->
-              <div class="flip-front">
+              <div class="flip-front" style="border-color: var(--neon-cyan);">
                 <h4 class="pack-title">Aylık Kiralama</h4>
                 <div class="pack-price">1.500<span>₺ / ay</span></div>
                 <ul style="list-style: none; color: var(--text-secondary); text-align: left; line-height: 2; margin-bottom: 20px;">
-                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> Sınırsız Canlı Analiz</li>
-                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> Discord/TG Entegrasyonu</li>
-                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> 7/24 Sunucu Desteği</li>
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-cyan);"></i> Sınırsız Canlı Analiz</li>
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-cyan);"></i> Discord/TG Entegrasyonu</li>
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-cyan);"></i> 7/24 Sunucu Desteği</li>
                 </ul>
-                <button class="btn btn-glow" style="border-color: var(--neon-red); color: var(--neon-red); width: 100%;">Satın Al</button>
+                <button class="btn btn-glow" style="width: 100%;">Satın Al</button>
               </div>
               
               <!-- Back (Yearly) -->
-              <div class="flip-back">
+              <div class="flip-back" style="border-color: var(--neon-cyan);">
                 <h4 class="pack-title">Yıllık Lisans</h4>
                 <div class="pack-price">14.400<span>₺ / yıl</span></div>
                 <ul style="list-style: none; color: var(--text-secondary); text-align: left; line-height: 2; margin-bottom: 20px;">
-                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> Sınırsız Canlı Analiz</li>
-                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> Özel Markalama (White-label)</li>
-                  <li><i class="fa-solid fa-check" style="color: var(--neon-red);"></i> Öncelikli Algoritma</li>
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-cyan);"></i> Sınırsız Canlı Analiz</li>
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-cyan);"></i> Özel Markalama (White-label)</li>
+                  <li><i class="fa-solid fa-check" style="color: var(--neon-cyan);"></i> Öncelikli Algoritma</li>
                 </ul>
-                <button class="btn btn-glow" style="border-color: var(--neon-red); color: var(--neon-red); width: 100%;">Satın Al</button>
+                <button class="btn btn-glow" style="width: 100%;">Satın Al</button>
               </div>
             </div>
           </div>
@@ -176,6 +180,31 @@
         </div>
 
       </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section" style="padding-top: 20px; padding-bottom: 120px;">
+        <h2 class="section-title scroll-reveal">Sıkça Sorulan <span>Sorular</span> & İletişim</h2>
+        <div class="faq-container glass" style="padding: 40px; border-radius: 16px; background: rgba(10, 31, 36, 0.6); box-shadow: 0 10px 40px rgba(0,243,255,0.05); text-align: left; width: 100%; max-width: 900px;">
+            <div class="faq-item">
+                <button class="faq-question">WhatsApp Otomasyonu kendi numaramda çalışır mı? <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Evet, LeadNovaWP altyapısı sayesinde bot, mevcut işletme numaranıza entegre edilir. Müşterileriniz doğrudan sizinle konuşuyormuş gibi bot üzerinden işlem yapabilir.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">BARON AI kendi sunucuma entegre edilebilir mi? <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Evet, BARON AI spor analiz altyapısını işletmenizin web sitesine veya kendi Discord/Telegram sunucunuza özel bir panel olarak kurabiliriz.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">İletişim ve Proje Fiyatlandırması nasıl yapılıyor? <i class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Sizin için en doğru çözümü belirlemek adına WhatsApp hattımız olan <a href="https://wa.me/905374064175" style="color: var(--neon-cyan);">+90 537 406 41 75</a> üzerinden mesaj atarak ücretsiz keşif ve teklif alabilirsiniz. Fiyatlar tamamen sunulacak mimari ve kapsamına göre değişmektedir.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
@@ -188,5 +217,27 @@
     </footer>
 
     <script type="module" src="/src/main.js"></script>
+    <script>
+      // SSS (FAQ) Basit Accordion Logic
+      document.querySelectorAll('.faq-question').forEach(question => {
+          question.addEventListener('click', () => {
+              const item = question.parentNode;
+              const answer = question.nextElementSibling;
+              
+              if (item.classList.contains('active')) {
+                  item.classList.remove('active');
+                  answer.style.maxHeight = null;
+              } else {
+                  // İstersen hepsini kapat
+                  document.querySelectorAll('.faq-item').forEach(other => {
+                      other.classList.remove('active');
+                      other.querySelector('.faq-answer').style.maxHeight = null;
+                  });
+                  item.classList.add('active');
+                  answer.style.maxHeight = answer.scrollHeight + "px";
+              }
+          });
+      });
+    </script>
   </body>
 </html>

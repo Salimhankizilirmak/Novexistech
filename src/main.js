@@ -153,9 +153,9 @@ if (baronTriggerBtn) {
                 const msgDiv = document.createElement('div');
                 msgDiv.className = 'msg';
                 msgDiv.innerHTML = `
-                    <div class="msg-avatar">AI</div>
+                    <div class="msg-avatar" style="background: var(--neon-cyan);">AI</div>
                     <div class="msg-content">
-                        <h5>BARON_BOT <span>| Yeni Analiz Eşleşti</span></h5>
+                        <h5 style="color: var(--neon-cyan);">BARON_BOT <span style="color: var(--text-secondary);">| Yeni Analiz Eşleşti</span></h5>
                         <p>⚡ <b>${bet.home} - ${bet.away}</b><br>Hedef: <strong style="color: var(--neon-cyan);">${bet.target}</strong> (@ ${bet.odds})</p>
                     </div>
                 `;
