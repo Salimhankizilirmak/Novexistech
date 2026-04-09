@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameLover Kafe | İnternet & Donanım Merkezi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <nav class="navbar glass">
+      <div class="nav-logo">
+        <a href="index.html">LEAD<span>NOVA</span></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="#gamelover" style="color: var(--neon-purple);">🎮 GameLover Kafe</a></li>
+      </ul>
+      <a href="https://wa.me/905374064175" target="_blank" class="btn btn-glow">Bize Ulaşın</a>
+    </nav>
+
+    <!-- KAFE HEADER -->
+    <section class="section" style="padding-top: 150px; min-height: auto; align-items: center; text-align: center;">
+      <h1 class="hero-headline brand-font">Oyuncuların <span style="color: var(--neon-purple); text-shadow: 0 0 25px rgba(188, 19, 254, 0.6);">Siber Üssü</span></h1>
+      <p style="color: var(--text-secondary); max-width: 600px; margin-top: 20px;">En üst düzey donanımlar ve kesintisiz fiber hızında internet ile maksimum performans.</p>
+    </section>
+
+    <!-- SAYFA 2: GAMING ZONE -->
+    <section id="gamelover" class="section" style="padding-top: 0;">
+      <div class="laser-scanner"></div>
+      
+      <!-- VIP KISMI (VIDEO) -->
+      <div class="vip-area-container scroll-reveal glass" style="border-radius: 12px; border: 1px solid var(--neon-purple);">
+        <video class="vip-video-bg" autoplay loop muted playsinline>
+          <source src="/images/kafe-vid.mp4" type="video/mp4">
+        </video>
+
+        <!-- Tooltipler -->
+        <div class="tooltip-point" style="top: 30%; left: 40%;">
+          <i class="fa-solid fa-microchip"></i>
+          <div class="tooltip-content">RTX 4090 / i9 Sistemler</div>
+        </div>
+        <div class="tooltip-point" style="top: 50%; left: 70%;">
+          <i class="fa-solid fa-desktop"></i>
+          <div class="tooltip-content">240Hz Zowie Monitörler</div>
+        </div>
+        <div class="tooltip-point" style="top: 70%; left: 20%;">
+          <i class="fa-solid fa-chair"></i>
+          <div class="tooltip-content">DXRacer VIP Koltuklar</div>
+        </div>
+      </div>
+
+      <!-- Fiyatlandırma -->
+      <div class="pricing-grid scroll-reveal" style="margin-top: 50px;">
+        <div class="pricing-card glass tilt-card">
+          <h3>Normal Ziyaretçi</h3>
+          <div class="pricing-price">90<span>₺ / saat</span></div>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;">Standart masa kiralama ve donanım erişimi.</p>
+          <button class="btn btn-glow" style="width: 100%; border-color: var(--neon-purple); color: var(--neon-purple);">Rezerve Et</button>
+        </div>
+        <div class="pricing-card glass tilt-card premium">
+          <h3>Ayrıcalıklı Üye</h3>
+          <div class="pricing-price">75<span>₺ / saat</span></div>
+          <p style="color: var(--text-secondary); margin-bottom: 20px;">Hesaplı oyun süresi ve VIP önceliği.</p>
+          <button class="btn btn-glow" style="width: 100%; border-color: var(--neon-purple); color: var(--neon-purple);">Kayıt Ol</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-logo">LeadNova Tarafından Geliştirildi</div>
+      <div class="social-links">
+        <a href="https://wa.me/905374064175" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

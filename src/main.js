@@ -39,8 +39,8 @@ initParticles();
 // --- 2. Typed.js Initialization ---
 new Typed('#typed-text', {
   strings: [
-    'Novexistech: Dijital ve Fiziksel Dünyanın Kesişim Noktası.', 
-    'VIP Sistemler, Akıllı Yazılımlar, Otonom Algoritmalar...'
+    'LeadNova: Dijital ve Fiziksel Dünyanın Kesişim Noktası.', 
+    'Yazılım Çözümleri, Otonom Algoritmalar, Süreç Otomasyonu...'
   ],
   typeSpeed: 45,
   backSpeed: 25,

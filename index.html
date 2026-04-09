@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Novexistech | Dijital İnteraktif Deneyim</title>
+    <title>LeadNova | Dijital İnteraktif Deneyim</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <nav class="navbar glass">
       <div class="nav-logo">
-        <a href="#">NOVEXIS<span>TECH</span></a>
+        <a href="index.html">LEAD<span>NOVA</span></a>
       </div>
       <ul class="nav-links">
         <li><a href="#hero">Ana Üs</a></li>
-        <li><a href="#gamelover">İnternet Kafe</a></li>
         <li><a href="#portfolio">Yazılım</a></li>
         <li><a href="#baron-lair">Baron Bot</a></li>
+        <li><a href="gamelover.html" style="color: var(--neon-purple);">🎮 GameLover Kafe</a></li>
       </ul>
       <a href="https://wa.me/905374064175" target="_blank" class="btn btn-glow">Bize Ulaşın</a>
     </nav>
@@ -30,72 +30,29 @@
       </div>
 
       <div class="accordion-container scroll-reveal">
-        <div class="accordion-panel" data-target="#gamelover" style="background-image: url('/images/kafe1.jpeg');">
+        <div class="accordion-panel" data-target="#portfolio" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop'); border-color: rgba(0, 243, 255, 0.3);">
           <div class="panel-content">
-            <h3>GameLover Kafe</h3>
-            <p>Fiziksel donanım, VIP odalar ve 7/24 oyuncu atmosferi.</p>
+            <h3 style="color: var(--neon-cyan);">Yaratıcılık Merkezi</h3>
+            <p>İşletmelere özel web, mobil app ve UI/UX tasarımı.</p>
           </div>
         </div>
-        <div class="accordion-panel" data-target="#portfolio" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop');">
+        <div class="accordion-panel" data-target="#baron" style="background-image: url('/images/baron.jpeg'); border-color: rgba(255, 0, 60, 0.3);">
           <div class="panel-content">
-            <h3>Yaratıcılık Merkezi</h3>
-            <p>İşletmelere özel web, mobil app ve entegrasyonlar.</p>
-          </div>
-        </div>
-        <div class="accordion-panel" data-target="#baron" style="background-image: url('/images/baron.jpeg');">
-          <div class="panel-content">
-            <h3>BARON AI</h3>
+            <h3 style="color: var(--neon-red);">BARON AI</h3>
             <p>Otonom spor analiz botları ve Discord algoritmaları.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- SAYFA 2: GAMING ZONE -->
-    <section id="gamelover" class="section">
-      <div class="laser-scanner"></div>
-      <h2 class="section-title scroll-reveal">KAFE: <span>Donanım Merkezi</span></h2>
-
-      <!-- VIP KISMI (VIDEO) -->
-      <div class="vip-area-container scroll-reveal glass" style="border-radius: 12px; border: 1px solid var(--neon-purple);">
-        <video class="vip-video-bg" autoplay loop muted playsinline>
-          <source src="/images/kafe-vid.mp4" type="video/mp4">
-        </video>
-
-        <!-- Tooltipler -->
-        <div class="tooltip-point" style="top: 30%; left: 40%;">
-          <i class="fa-solid fa-microchip"></i>
-          <div class="tooltip-content">RTX 4090 / i9 Sistemler</div>
-        </div>
-        <div class="tooltip-point" style="top: 50%; left: 70%;">
-          <i class="fa-solid fa-desktop"></i>
-          <div class="tooltip-content">240Hz Zowie Monitörler</div>
-        </div>
-        <div class="tooltip-point" style="top: 70%; left: 20%;">
-          <i class="fa-solid fa-chair"></i>
-          <div class="tooltip-content">DXRacer VIP Koltuklar</div>
-        </div>
-      </div>
-
-      <!-- Fiyatlandırma -->
-      <div class="pricing-grid scroll-reveal">
-        <div class="pricing-card glass tilt-card">
-          <h3>Normal Ziyaretçi</h3>
-          <div class="pricing-price">90<span>₺ / saat</span></div>
-          <p style="color: var(--text-secondary); margin-bottom: 20px;">Standart masa kiralama ve donanım erişimi.</p>
-          <button class="btn btn-glow" style="width: 100%; border-color: var(--neon-purple); color: var(--neon-purple);">Rezerve Et</button>
-        </div>
-        <div class="pricing-card glass tilt-card premium">
-          <h3>Ayrıcalıklı Üye</h3>
-          <div class="pricing-price">75<span>₺ / saat</span></div>
-          <p style="color: var(--text-secondary); margin-bottom: 20px;">Hesaplı oyun süresi ve VIP önceliği.</p>
-          <button class="btn btn-glow" style="width: 100%; border-color: var(--neon-purple); color: var(--neon-purple);">Kayıt Ol</button>
+        <div class="accordion-panel" data-target="#automation" style="background-image: url('/images/leadnova-wp.jpeg'); border-color: rgba(37, 211, 102, 0.3);">
+          <div class="panel-content">
+            <h3 style="color: var(--neon-green);">Süreç Otomasyonu</h3>
+            <p>Kurumsal WhatsApp botları ve iş akışı optimizasyonu.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SAYFA 3: YAZILIM / MASONRY GRID -->
-    <section id="portfolio" class="section" style="background-color: rgba(10, 10, 15, 0.7);">
+    <section id="portfolio" class="section" style="background-color: rgba(10, 10, 15, 0.7); border-top: 1px solid rgba(0, 243, 255, 0.2);">
       <h2 class="section-title scroll-reveal">YAZILIM: <span>Koddan Ürüne</span></h2>
       
       <div class="masonry-grid scroll-reveal">
@@ -222,7 +179,7 @@
     </section>
 
     <footer class="footer">
-      <div class="footer-logo">Novexistech Dijital</div>
+      <div class="footer-logo">LeadNova Tarafından Geliştirildi</div>
       <div class="social-links">
         <a href="https://wa.me/905374064175" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
         <a href="#" class="social-icon"><i class="fa-brands fa-discord"></i></a>
