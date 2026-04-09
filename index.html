@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novexistech | Dijital & Fiziksel Ekosistem</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar glass">
+      <div class="nav-logo">
+        <a href="#">NOVEXIS<span>TECH</span></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero">Hub</a></li>
+        <li><a href="#gaming-zone">Kafe</a></li>
+        <li><a href="#portfolio">Yazılım</a></li>
+        <li><a href="#baron-bot">Botlar</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-glow">Bize Ulaşın</a>
+    </nav>
+
+    <!-- Page 1: Hero / Hub -->
+    <section id="hero" class="section">
+      <div id="tsparticles"></div>
+      
+      <div class="hero-content">
+        <h1 class="hero-headline brand-font">Dijital ve Fiziksel Dünyanın<br><span>Kesişim Noktası</span></h1>
+        <div class="hero-subtitle"><span id="typed-text"></span></div>
+      </div>
+
+      <div class="accordion-container">
+        <div class="accordion-item acc-kafe" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop');">
+          <div class="accordion-content">
+            <h3>Gaming Zone</h3>
+            <p>Premium donanımlar ile sınırları zorla.</p>
+          </div>
+        </div>
+        <div class="accordion-item acc-yazilim" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop');">
+          <div class="accordion-content">
+            <h3>Yazılım Merkezi</h3>
+            <p>Sıradışı kod mimarisi, mükemmel ürünler.</p>
+          </div>
+        </div>
+        <div class="accordion-item acc-bot" style="background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop');">
+          <div class="accordion-content">
+            <h3>Bot Lair</h3>
+            <p>Yapay zeka asistanları ve BARON ile hükmet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 2: Gaming Zone -->
+    <section id="gaming-zone" class="section">
+      <div class="laser-scanner"></div>
+      <h2 class="section-title">Donanım <span>Cephaneliği</span></h2>
+      
+      <div class="hardware-grid">
+        <div class="hardware-card glass tilt-card">
+          <i class="fa-solid fa-microchip"></i>
+          <h3>RTX 4090</h3>
+          <p>Maksimum Kare Hızı</p>
+        </div>
+        <div class="hardware-card glass tilt-card">
+          <i class="fa-solid fa-desktop"></i>
+          <h3>240Hz Zowie</h3>
+          <p>Sıfır Gecikme</p>
+        </div>
+        <div class="hardware-card glass tilt-card">
+          <i class="fa-solid fa-chair"></i>
+          <h3>Titanium Koltuk</h3>
+          <p>Ergonomik Konfor</p>
+        </div>
+      </div>
+
+      <h2 class="section-title">VIP <span>Alanı</span></h2>
+      <div class="vip-area">
+        <div class="tooltip-point">
+          <div class="tooltip-box glass">RTX 4090 Sistem</div>
+        </div>
+        <div class="tooltip-point">
+          <div class="tooltip-box glass">Zowie 240Hz Monitör</div>
+        </div>
+      </div>
+
+      <div class="pricing-table">
+        <div class="price-card glass tilt-card">
+          <h3>Standart Saat</h3>
+          <div class="price">₺30</div>
+          <p>Standart Ekipmanlar</p>
+          <p>144Hz Monitör</p>
+          <br>
+          <button class="btn btn-glow shine-btn">Rezerve Et</button>
+        </div>
+        <div class="price-card glass tilt-card" style="border-color: var(--neon-blue);">
+          <h3>VIP Saat</h3>
+          <div class="price">₺50</div>
+          <p>Premium Ekipmanlar</p>
+          <p>240Hz Monitör</p>
+          <p>Özel Oda</p>
+          <br>
+          <button class="btn btn-glow shine-btn">VIP Rezerve Et</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 3: Software Portfolio -->
+    <section id="portfolio" class="section">
+      <h2 class="section-title scroll-reveal">Koddan <span>Ürüne</span></h2>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop');"></div>
+          <div class="portfolio-details glass">
+            <div>
+              <h4>Ne Yesek</h4>
+              <div class="tech-stack">React &bull; Node.js</div>
+            </div>
+            <button class="btn btn-glow ripple-btn" style="padding: 8px 15px;">Demo</button>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop');"></div>
+          <div class="portfolio-details glass">
+            <div>
+              <h4>Finans Dash</h4>
+              <div class="tech-stack">Vue &bull; Python</div>
+            </div>
+            <button class="btn btn-glow ripple-btn" style="padding: 8px 15px;">Demo</button>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop');"></div>
+          <div class="portfolio-details glass">
+            <div>
+              <h4>Bot Yönetimi</h4>
+              <div class="tech-stack">Vanilla &bull; Vite</div>
+            </div>
+            <button class="btn btn-glow ripple-btn" style="padding: 8px 15px;">Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-container glass scroll-reveal">
+        <div class="stat-item">
+          <span class="stat-number counter" data-target="45">0</span>
+          <span class="stat-label">Teslim Edilen Proje</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number counter" data-target="100000">0</span>
+          <span class="stat-label">Yazılan Satır Kod</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number counter" data-target="99">0</span>
+          <span class="stat-label">Müşteri Memnuniyeti (%)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 4: Baron Bot Dashboard -->
+    <section id="baron-bot" class="section">
+      <div class="baron-header scroll-reveal">
+        <h1 class="glitch-text" data-text="BARON">BARON</h1>
+        <div class="terminal-text" id="terminal-text"></div>
+      </div>
+
+      <div class="bot-showcase">
+        <!-- Discord Mockup -->
+        <div class="discord-mock">
+          <div class="discord-header">
+            <i class="fa-brands fa-discord"></i> BARON Analiz Merkezi
+          </div>
+          <div class="discord-messages" id="discord-messages">
+            <!-- Messages will be generated by JS -->
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="bot-controls glass tilt-card">
+          <h3 style="font-size: 1.8rem; color: var(--neon-red);">Kontrol Paneli</h3>
+          <p>Yapay Zeka Destekli Bahis Analizi ve Otomasyon Sistemi.</p>
+          
+          <button class="btn btn-neon-red" id="trigger-analysis-btn">Analizi Başlat <i class="fa-solid fa-play"></i></button>
+
+          <div class="pricing-toggle">
+            <span>Aylık</span>
+            <label class="switch">
+              <input type="checkbox" id="pricing-toggle-btn">
+              <span class="slider"></span>
+            </label>
+            <span>Yıllık (-20%)</span>
+          </div>
+
+          <div class="price-display" id="baron-price">₺999<span style="font-size: 1rem; color: var(--text-secondary);">/ay</span></div>
+
+          <button class="btn btn-neon-red btn-pulsing">Sunucuna Ekle <i class="fa-brands fa-discord"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-logo">Novexistech Tarafından Kodlandı</div>
+      <div class="social-links">
+        <a href="#" class="social-icon"><i class="fa-brands fa-discord"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

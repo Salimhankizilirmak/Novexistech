@@ -1,0 +1,21 @@
+{
+  "name": "novexis",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.0.4"
+  },
+  "dependencies": {
+    "@tsparticles/basic": "^3.9.1",
+    "@tsparticles/engine": "^3.9.1",
+    "gsap": "^3.14.2",
+    "typed.js": "^3.0.0",
+    "vanilla-tilt": "^1.8.1"
+  }
+}
