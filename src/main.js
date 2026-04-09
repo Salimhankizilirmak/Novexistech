@@ -85,54 +85,104 @@ document.querySelectorAll('.scroll-reveal').forEach(el => {
   observer.observe(el);
 });
 
-// --- 6. BARON AI Logic & Fake API Fetch ---
-// Matematiksel Mantık: 49.8 baz oran + %20 ekleme
-const baseAccuracy = 49.8;
-const displayedAccuracy = (baseAccuracy + 20).toFixed(1); 
-document.getElementById('ai-accuracy').innerText = `%${displayedAccuracy}`;
 
-// Sahte maç verileri (Betbot mantığına uygun 4 maç)
-const mockBets = [
-  "⚽ <b>Galatasaray - Fenerbahçe</b> | Tahmin: KG VAR (Güven: %84)",
-  "🏀 <b>Lakers - Warriors</b> | Tahmin: Üst 225.5 (Güven: %79)",
-  "⚽ <b>Real Madrid - Barcelona</b> | Tahmin: MS 1 (Güven: %88)",
-  "🎾 <b>Alcaraz - Djokovic</b> | Tahmin: Maç Sonucu 2 (Güven: %72)"
-];
+// ==========================================
+// --- 6. BARON AI: CANLI API ENTEGRASYONU --
+// ==========================================
 
 const triggerBtn = document.getElementById('trigger-analysis-btn');
 const discordMessages = document.getElementById('discord-messages');
 
-triggerBtn.addEventListener('click', () => {
-  triggerBtn.disabled = true;
-  triggerBtn.innerHTML = 'Veriler Çekiliyor... <i class="fa-solid fa-spinner fa-spin"></i>';
-  discordMessages.innerHTML = ''; // Paneli temizle
-  
-  let i = 0;
-  const interval = setInterval(() => {
-    if (i < mockBets.length) {
-      const msgDiv = document.createElement('div');
-      msgDiv.className = 'msg';
-      msgDiv.innerHTML = `
-        <div class="msg-avatar" style="background: var(--neon-purple);">AI</div>
-        <div class="msg-content">
-          <h5>BARON Bot <span>| Betbot AI API'den alındı</span></h5>
-          <p>${mockBets[i]}</p>
-        </div>
-      `;
-      discordMessages.appendChild(msgDiv);
-      discordMessages.scrollTop = discordMessages.scrollHeight; // Otomatik aşağı kaydır
-      i++;
-    } else {
-      clearInterval(interval);
-      triggerBtn.disabled = false;
-      triggerBtn.innerHTML = 'Son 4 Analizi Tekrar Çek <i class="fa-solid fa-rotate-right"></i>';
+// A. İstatistikleri Canlı Çekme Fonksiyonu
+async function fetchBotStats() {
+  try {
+    const res = await fetch('https://betbotai.onrender.com/api/stats'); 
+    if(res.ok) {
+      const data = await res.json();
+      
+      // İstediğin matematik: Çekilen accuracy oranına +20 ekliyoruz
+      const baseAccuracy = parseFloat(data.accuracy || 49.8);
+      const displayedAccuracy = (baseAccuracy + 20).toFixed(1);
+      
+      document.getElementById('tracked-matches').innerText = data.trackedMatches || "0";
+      document.getElementById('ai-accuracy').innerText = `%${displayedAccuracy}`;
     }
-  }, 800); // Her maçı 0.8 saniyede bir ekrana bas
+  } catch (e) {
+    console.log("Canlı istatistikler çekilemedi, varsayılan (49.8 + 20) uygulanıyor.");
+    const defaultAccuracy = 49.8 + 20;
+    document.getElementById('ai-accuracy').innerText = `%${defaultAccuracy.toFixed(1)}`;
+  }
+}
+
+// Sayfa açıldığında istatistikleri getir
+fetchBotStats();
+
+// B. Canlı Maçları Çekme Butonu
+triggerBtn.addEventListener('click', async () => {
+  triggerBtn.disabled = true;
+  triggerBtn.innerHTML = 'Canlı Sistem Bağlanıyor... <i class="fa-solid fa-spinner fa-spin"></i>';
+  discordMessages.innerHTML = ''; 
+  
+  try {
+    const response = await fetch('https://betbotai.onrender.com/api/bets'); 
+    
+    if (!response.ok) throw new Error("Sunucu Yanıt Vermedi");
+    
+    const data = await response.json(); 
+    
+    // Gelen JSON datasından sadece ilk 4 maçı alalım
+    const liveBets = Array.isArray(data) ? data.slice(0, 4) : [];
+
+    if (liveBets.length === 0) {
+        discordMessages.innerHTML = `<p style="padding: 15px; color: var(--text-secondary);">Şu an aktif analiz bulunamadı.</p>`;
+        triggerBtn.disabled = false;
+        triggerBtn.innerHTML = 'Tekrar Dene <i class="fa-solid fa-rotate-right"></i>';
+        return;
+    }
+
+    let i = 0;
+    const interval = setInterval(() => {
+      if (i < liveBets.length) {
+        const bet = liveBets[i];
+        
+        const matchTitle = bet.match || bet.title || "Bilinmeyen Karşılaşma";
+        const predictionText = bet.target || bet.prediction || "Sistem Analizi Bekleniyor";
+        const odds = bet.odds || bet.oran || "?";
+
+        const msgDiv = document.createElement('div');
+        msgDiv.className = 'msg';
+        msgDiv.innerHTML = `
+          <div class="msg-avatar" style="background: var(--neon-purple);">AI</div>
+          <div class="msg-content">
+            <h5>BARON Bot <span>| Betbot AI API'den Canlı Çekildi</span></h5>
+            <p>⚡ <b>${matchTitle}</b> | Hedef: ${predictionText} (@ ${odds})</p>
+          </div>
+        `;
+        discordMessages.appendChild(msgDiv);
+        discordMessages.scrollTop = discordMessages.scrollHeight;
+        i++;
+      } else {
+        clearInterval(interval);
+        triggerBtn.disabled = false;
+        triggerBtn.innerHTML = 'Son 4 Analizi Tekrar Çek <i class="fa-solid fa-rotate-right"></i>';
+      }
+    }, 800);
+
+  } catch (error) {
+    console.error("Bot canlı veri çekme hatası:", error);
+    discordMessages.innerHTML = `
+      <div style="background: rgba(255,0,0,0.1); border-left: 3px solid var(--neon-red); padding: 15px; margin-top: 10px; border-radius: 4px;">
+        <span style="color: var(--neon-red); font-weight: bold;">HATA:</span> betbotai.onrender.com sunucusuna ulaşılamadı. API yanıt vermiyor olabilir.
+      </div>
+    `;
+    triggerBtn.disabled = false;
+    triggerBtn.innerHTML = 'Tekrar Dene <i class="fa-solid fa-rotate-right"></i>';
+  }
 });
 
 // --- 7. Baron Terminal Typewriter effect ---
 new Typed('#terminal-text', {
-  strings: ['> BetbotAI API Bağlantısı Kuruldu.', '> Veriler Senkronize Ediliyor...', '> Sistem Analize Hazır.'],
+  strings: ['> Canlı Sunucu Bekleniyor...', '> Veriler Senkronize Ediliyor...', '> Sistem Analize Hazır.'],
   typeSpeed: 40,
   backSpeed: 20,
   startDelay: 500,
