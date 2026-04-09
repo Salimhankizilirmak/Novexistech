@@ -37,17 +37,20 @@ async function initParticles() {
 initParticles();
 
 // --- 2. Typed.js Initialization ---
-new Typed('#typed-text', {
-  strings: [
-    'LeadNova: Dijital ve Fiziksel Dünyanın Kesişim Noktası.', 
-    'Yazılım Çözümleri, Otonom Algoritmalar, Süreç Otomasyonu...'
-  ],
-  typeSpeed: 45,
-  backSpeed: 25,
-  backDelay: 2500,
-  loop: true,
-  cursorChar: '_',
-});
+const typedEl = document.getElementById('typed-text');
+if (typedEl) {
+  new Typed('#typed-text', {
+    strings: [
+      'LeadNova: Dijital ve Fiziksel Dünyanın Kesişim Noktası.', 
+      'Yazılım Çözümleri, Otonom Algoritmalar, Süreç Otomasyonu...'
+    ],
+    typeSpeed: 45,
+    backSpeed: 25,
+    backDelay: 2500,
+    loop: true,
+    cursorChar: '_',
+  });
+}
 
 // --- 3. Vanilla Tilt ---
 VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
